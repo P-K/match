@@ -1,7 +1,5 @@
 venv
 *.py[cod]
-mmm_match/settings.py
-settings.py
 
 # C extensions
 *.so
