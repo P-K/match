@@ -9,9 +9,59 @@
 </div>
 <form>
     <fieldset>
-        <!--<legend>Legend</legend>-->
-        <label>Label name</label><input type="text"> <span class="help-block">Example block-level help text here.</span>
-        <label class="checkbox"><input type="checkbox"> Check me out</label> 
+        <!-- Choose language of advisor  -->
+        <label><b>Select Advisor Language Preference</b></label>
+        <div class="row-fluid">
+            <div class="span4"> 
+                <label class="checkbox"><input type="radio" name="language" value="en"> English</label>
+            </div> 
+            <div class="span4">
+                <label class="checkbox"><input type="radio" name="language" value="fr"> French</label> 
+            </div>
+            <div class="span4"> 
+                <label class="checkbox"><input type="radio" name="language" value="otr"> Other</label>
+            </div>
+        </div>
+        <br> 
+        <!-- Choose gender of advisor  -->
+        <label><b>Select Advisor Gender Preference</b></label>
+        <div class="row-fluid">
+            <div class="span4"> 
+                <label class="checkbox"><input type="radio" name="gender" value="f"> Female</label>
+            </div> 
+            <div class="span4">
+                <label class="checkbox"><input type="radio" name="gender" value="m"> Male</label> 
+            </div>
+            <div class="span4"> 
+                <label class="checkbox"><input type="radio" name="gender" value="n"> No Preference</label>
+            </div>
+        </div> 
+        <br>
+        <!-- Choose age of advisor  -->
+        <label><b>Select Advisor Age Preference</b></label>
+        <div class="row-fluid">
+            <div class="span2"> 
+                <label class="checkbox"><input type="radio" name="age" value="1"> Under 30</label>
+            </div> 
+            <div class="span2">
+                <label class="checkbox"><input type="radio" name="age" value="2"> 30 - 50</label> 
+            </div>
+            <div class="span2"> 
+                <label class="checkbox"><input type="radio" name="age" value="3"> Over 50</label>
+            </div>
+            <div class="span2"> 
+                <label class="checkbox"><input type="radio" name="age" value="4"> No Preference</label>
+            </div>
+        </div>
+        <br>
+        <!-- Choose location of advisor  -->
+        <label><b>Select Advisor Location Preference</b></label>
+        <div class="row-fluid">
+            <div class="span6"> 
+                <label>Postal Code</label><input type="text" name="postal_code"/>
+            </div> 
+        </div>
+        <br><br>
         <button type="submit" class="btn">Next</button>
     </fieldset>
 </form>
