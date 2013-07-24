@@ -25,21 +25,26 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span12">
-
-                    {% block content %}
-                    {% endblock %}
-
+                    <div class="page-header">
+                        <h1>
+                            Tell Us a Little About Yourself<br><small>For a better match</small>
+                        </h1>
+                    </div>
+                    <form>
+                        <fieldset>
+                            <!--<legend>Legend</legend>--> 
+                            <label>Label name</label><input type="text"> <span class="help-block">Example block-level help text here.</span> 
+                            <label class="checkbox"><input type="checkbox"> Check me out</label> <button type="submit" class="btn">Submit</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
+        {% block content %}
+        {% endblock %}
     </body>
 </html>
 
-
-
-
-
-    </body>
-</html>
+                                                                                                             </body>
 
 

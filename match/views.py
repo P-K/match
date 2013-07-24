@@ -9,7 +9,10 @@ from django.contrib.auth.models import User
 # TO-DO: add an import for forms
 
 def index(request):
-    return render_to_response('home.html')
+    return render(request,'home.html',{'NEXT_URL':'/demographic'})
+
+def demographic(request):
+    return render(request,'demographic.html',{'NEXT_URL':'/'})
 
 
 

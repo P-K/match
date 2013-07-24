@@ -5,8 +5,8 @@ import os
 
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
-#DEBUG = True
-#TEMPLATE_DEBUG = DEBUG
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -68,12 +68,12 @@ MEDIA_URL = ''
 # adding these settings allow for wsgi.py to serve static iles in prod
 # added lines in wsgi.py
 
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = os.path.join(PROJECT_PATH,'static')
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_PATH, 'static'),
-)
+#STATICFILES_DIRS = (
+#    os.path.join(PROJECT_PATH, 'static'),
+#)
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files

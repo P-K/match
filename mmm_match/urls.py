@@ -17,6 +17,7 @@ urlpatterns = patterns('',
 
     url(r'^$', 'match.views.index'), # root page
     
+    url(r'^demographic$', 'match.views.demographic'), # answer demographic questions
 
     
     
