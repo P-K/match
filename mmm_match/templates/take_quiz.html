@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br><br><br> <!-- TO-DO: Replace with css spacing-->
+<h1>
+    <div class="row-fluid">
+        <div class="span6"> 
+            <small>"I want to take the quiz"</small>
+        </div> 
+        <div class="span6">
+            <a class="btn btn-primary btn-large" href="http://mmm.mymoneymindset.com" target="_blank">Click Here »</a><br><br>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span6"> 
+            <small>"I have already taken the quiz"</small>
+        </div> 
+        <div class="span6">
+            <a class="btn btn-primary btn-large" href="#scrape">Click Here »</a> <!-- MODAL --><br><br>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span6"> 
+            <small>"I don't want to take the quiz"</small>
+        </div> 
+        <div class="span6">
+            <a class="btn btn-primary btn-large" href="{{ SELF_EVAL_URL }}">Click Here »</a> <!-- self eval --><br><br>
+        </div>
+    </div>
+</h1>
+<a class="btn btn-primary btn-small" href="{{ PREV_URL }}">« Prev</a>
+{% endblock %}
+
+
+

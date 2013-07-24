@@ -12,8 +12,10 @@ def index(request):
     return render(request,'home.html',{'NEXT_URL':'/demographic'})
 
 def demographic(request):
-    return render(request,'demographic.html',{'NEXT_URL':'/'})
+    return render(request,'demographic.html',{'PREV_URL':'/welcome','NEXT_URL':'/quiz'})
 
+def take_quiz(request):
+    return render(request,'take_quiz.html',{'PREV_URL':'/demographic','NEXT_URL':'/'})
 
 
 

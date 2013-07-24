@@ -15,10 +15,11 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^$', 'match.views.index'), # root page
+    url(r'^welcome$', 'match.views.index'), # root page
     
     url(r'^demographic$', 'match.views.demographic'), # answer demographic questions
 
     
+    url(r'^quiz$', 'match.views.take_quiz'), # answer demographic questions
     
     )

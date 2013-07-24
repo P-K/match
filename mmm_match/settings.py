@@ -28,6 +28,26 @@ DATABASES = {
     }
 }
 
+# set up memcached backend to store user session information
+def get_cache():
+    #import os
+    try:
+          os.environ['MEMCACHE_SERVERS'] = os.environ['MEMCACHIER_SERVERS'].REPLACE(',',';')
+          os.environ['MEMCACHE_USERNAME'] = os.environ['MEMCACHIER_USERNAME']
+          os.environ['MEMCACHE_PASSWORD'] = os.environ['MEMCACHIER_PASSWORD']
+
+          return {
+                  'default' : {
+                      'BACKEND' : 'django.core.cache.backends.locmem.LocMemCache',
+                      'TIMEOUT' : 500,
+                      'BINARY' : True,
+                      'OPTIONS' : { 'tcp_nodelay' : True }
+                      
+                      }
+                  
+                  }
+CACHES = get_cache()
+
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
